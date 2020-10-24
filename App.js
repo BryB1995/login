@@ -1,9 +1,7 @@
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import loginPage from './stuff';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import loginPage from './stuff/loginPage.jsx';
 
 export default function App() {
   return (
@@ -14,14 +12,14 @@ export default function App() {
     
     <View style={styles.container}>
       <Text>Login!</Text>
-      <loginPage />
+      <loginPage/>
     </View>
 
 
-  );S
+  );
 }
 
-const stack = createStackNavigator();
+
 
 const styles = StyleSheet.create({
   container: {
